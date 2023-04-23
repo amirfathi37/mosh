@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-public class ConsoleModel {
+public class Console {
+
     private static Scanner scanner = new Scanner(System.in);
 
-
-    public static double readNumber(String prompt){
-        System.out.println(prompt);
+    public static double readNumber(String prompt) {
         return scanner.nextDouble();
     }
 
     public static double readNumber(String prompt, int min, int max) {
 
+         scanner = new Scanner(System.in);
         double value = 0;
         while (true) {
             System.out.println(prompt);
